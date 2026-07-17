@@ -1,7 +1,9 @@
+import Hero from "@/components/home/Hero";
+
 export default function Home() {
   return (
-    <main>
-      <h1>SarfrazOS</h1>
+    <main className="min-h-screen bg-[#050816] text-white">
+      <Hero />
     </main>
   );
 }
