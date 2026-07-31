@@ -1,0 +1,108 @@
+app/admin/blogs/[id]/page.tsx(167,63): error TS2322: Type 'ChangeEvent<HTMLInputElement, HTMLInputElement>' is not assignable to type 'boolean | undefined'.
+app/admin/blogs/[id]/page.tsx(173,63): error TS2322: Type 'ChangeEvent<HTMLInputElement, HTMLInputElement>' is not assignable to type 'boolean | undefined'.
+app/admin/blogs/page.tsx(21,18): error TS2345: Argument of type '{ data: Blog[]; lastDoc: DocumentData | null; }' is not assignable to parameter of type 'SetStateAction<Blog[]>'.
+app/admin/login/page.tsx(22,40): error TS2345: Argument of type 'Auth | null' is not assignable to parameter of type 'Auth'.
+  Type 'null' is not assignable to type 'Auth'.
+app/admin/projects/[id]/page.tsx(173,63): error TS2322: Type 'ChangeEvent<HTMLInputElement, HTMLInputElement>' is not assignable to type 'boolean | undefined'.
+app/admin/projects/page.tsx(21,21): error TS2345: Argument of type '{ data: Project[]; lastDoc: DocumentData | null; }' is not assignable to parameter of type 'SetStateAction<Project[]>'.
+app/admin/skills/page.tsx(21,19): error TS2345: Argument of type '{ data: Skill[]; lastDoc: DocumentData | null; }' is not assignable to parameter of type 'SetStateAction<Skill[]>'.
+components/about/AboutStory.tsx(49,38): error TS2322: Type '{ hidden: { opacity: number; y: number; }; visible: { opacity: number; y: number; transition: { ease: number[]; duration: number; }; }; }' is not assignable to type 'Variants'.
+  Property 'visible' is incompatible with index signature.
+    Type '{ opacity: number; y: number; transition: { ease: number[]; duration: number; }; }' is not assignable to type 'Variant'.
+      Type '{ opacity: number; y: number; transition: { ease: number[]; duration: number; }; }' is not assignable to type 'TargetAndTransition'.
+        Type '{ opacity: number; y: number; transition: { ease: number[]; duration: number; }; }' is not assignable to type '{ transition?: Transition<any> | undefined; transitionEnd?: ResolvedValues$1 | undefined; }'.
+          Types of property 'transition' are incompatible.
+            Type '{ ease: number[]; duration: number; }' is not assignable to type 'Transition<any> | undefined'.
+              Type '{ ease: number[]; duration: number; }' is not assignable to type 'TransitionWithValueOverrides<any>'.
+                Type '{ ease: number[]; duration: number; }' is not assignable to type 'ValueAnimationTransition<any>'.
+                  Types of property 'ease' are incompatible.
+                    Type 'number[]' is not assignable to type 'Easing | Easing[] | undefined'.
+                      Type 'number[]' is not assignable to type 'EasingFunction | Easing[]'.
+                        Type 'number[]' is not assignable to type 'Easing[]'.
+                          Type 'number' is not assignable to type 'Easing'.
+components/admin/Sidebar.tsx(46,21): error TS2345: Argument of type 'Auth | null' is not assignable to parameter of type 'Auth'.
+  Type 'null' is not assignable to type 'Auth'.
+components/admin/TopNav.tsx(20,21): error TS2345: Argument of type 'Auth | null' is not assignable to parameter of type 'Auth'.
+  Type 'null' is not assignable to type 'Auth'.
+components/admin/inputs/SlugGenerator.tsx(77,26): error TS2339: Property 'value' does not exist on type '{ accept?: string | undefined; alt?: string | undefined; autoComplete?: HTMLInputAutoCompleteAttribute | undefined; capture?: boolean | "user" | "environment" | undefined; ... 300 more ...; onTransitionStartCapture?: TransitionEventHandler<...> | undefined; }'.
+components/admin/inputs/SlugGenerator.tsx(77,54): error TS2339: Property 'value' does not exist on type '{ accept?: string | undefined; alt?: string | undefined; autoComplete?: HTMLInputAutoCompleteAttribute | undefined; capture?: boolean | "user" | "environment" | undefined; ... 300 more ...; onTransitionStartCapture?: TransitionEventHandler<...> | undefined; }'.
+components/contact/ContactInfo.tsx(54,56): error TS2339: Property 'onClick' does not exist on type '{ id: string; title: string; description: string; icon: Element; link: string; } | { id: string; title: string; description: string; icon: Element; link?: undefined; }'.
+  Property 'onClick' does not exist on type '{ id: string; title: string; description: string; icon: Element; link: string; }'.
+components/contact/ContactInfo.tsx(69,33): error TS2339: Property 'onClick' does not exist on type '{ id: string; title: string; description: string; icon: Element; link: string; } | { id: string; title: string; description: string; icon: Element; link?: undefined; }'.
+  Property 'onClick' does not exist on type '{ id: string; title: string; description: string; icon: Element; link: string; }'.
+components/contact/ContactInfo.tsx(82,27): error TS2339: Property 'isAction' does not exist on type '{ id: string; title: string; description: string; icon: Element; link: string; } | { id: string; title: string; description: string; icon: Element; link?: undefined; }'.
+  Property 'isAction' does not exist on type '{ id: string; title: string; description: string; icon: Element; link: string; }'.
+components/contact/ContactInfo.tsx(84,31): error TS2339: Property 'actionIcon' does not exist on type '{ id: string; title: string; description: string; icon: Element; link: string; } | { id: string; title: string; description: string; icon: Element; link?: undefined; }'.
+  Property 'actionIcon' does not exist on type '{ id: string; title: string; description: string; icon: Element; link: string; }'.
+firebase/analytics.ts(10,32): error TS2345: Argument of type 'FirebaseApp | null' is not assignable to parameter of type 'FirebaseApp | undefined'.
+  Type 'null' is not assignable to type 'FirebaseApp | undefined'.
+firebase/repository.ts(67,32): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(firestore: Firestore, path: string, ...pathSegments: string[]): CollectionReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'Firestore'.
+      Type 'null' is not assignable to type 'Firestore'.
+  Overload 2 of 3, '(reference: CollectionReference<unknown, DocumentData>, path: string, ...pathSegments: string[]): CollectionReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'CollectionReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'CollectionReference<unknown, DocumentData>'.
+  Overload 3 of 3, '(reference: DocumentReference<unknown, DocumentData>, path: string, ...pathSegments: string[]): CollectionReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'DocumentReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'DocumentReference<unknown, DocumentData>'.
+firebase/repository.ts(109,30): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(firestore: Firestore, path: string, ...pathSegments: string[]): CollectionReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'Firestore'.
+      Type 'null' is not assignable to type 'Firestore'.
+  Overload 2 of 3, '(reference: CollectionReference<unknown, DocumentData>, path: string, ...pathSegments: string[]): CollectionReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'CollectionReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'CollectionReference<unknown, DocumentData>'.
+  Overload 3 of 3, '(reference: DocumentReference<unknown, DocumentData>, path: string, ...pathSegments: string[]): CollectionReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'DocumentReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'DocumentReference<unknown, DocumentData>'.
+firebase/repository.ts(129,24): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(firestore: Firestore, path: string, ...pathSegments: string[]): DocumentReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'Firestore'.
+      Type 'null' is not assignable to type 'Firestore'.
+  Overload 2 of 3, '(reference: CollectionReference<unknown, DocumentData>, path?: string | undefined, ...pathSegments: string[]): DocumentReference<unknown, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'CollectionReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'CollectionReference<unknown, DocumentData>'.
+  Overload 3 of 3, '(reference: DocumentReference<unknown, DocumentData>, path: string, ...pathSegments: string[]): DocumentReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'DocumentReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'DocumentReference<unknown, DocumentData>'.
+firebase/repository.ts(152,35): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(firestore: Firestore, path: string, ...pathSegments: string[]): DocumentReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'Firestore'.
+      Type 'null' is not assignable to type 'Firestore'.
+  Overload 2 of 3, '(reference: CollectionReference<unknown, DocumentData>, path?: string | undefined, ...pathSegments: string[]): DocumentReference<unknown, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'CollectionReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'CollectionReference<unknown, DocumentData>'.
+  Overload 3 of 3, '(reference: DocumentReference<unknown, DocumentData>, path: string, ...pathSegments: string[]): DocumentReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'DocumentReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'DocumentReference<unknown, DocumentData>'.
+firebase/repository.ts(152,82): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(firestore: Firestore, path: string, ...pathSegments: string[]): CollectionReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'Firestore'.
+      Type 'null' is not assignable to type 'Firestore'.
+  Overload 2 of 3, '(reference: CollectionReference<unknown, DocumentData>, path: string, ...pathSegments: string[]): CollectionReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'CollectionReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'CollectionReference<unknown, DocumentData>'.
+  Overload 3 of 3, '(reference: DocumentReference<unknown, DocumentData>, path: string, ...pathSegments: string[]): CollectionReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'DocumentReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'DocumentReference<unknown, DocumentData>'.
+firebase/repository.ts(178,24): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(firestore: Firestore, path: string, ...pathSegments: string[]): DocumentReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'Firestore'.
+      Type 'null' is not assignable to type 'Firestore'.
+  Overload 2 of 3, '(reference: CollectionReference<unknown, DocumentData>, path?: string | undefined, ...pathSegments: string[]): DocumentReference<unknown, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'CollectionReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'CollectionReference<unknown, DocumentData>'.
+  Overload 3 of 3, '(reference: DocumentReference<unknown, DocumentData>, path: string, ...pathSegments: string[]): DocumentReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'DocumentReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'DocumentReference<unknown, DocumentData>'.
+firebase/repository.ts(197,24): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(firestore: Firestore, path: string, ...pathSegments: string[]): DocumentReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'Firestore'.
+      Type 'null' is not assignable to type 'Firestore'.
+  Overload 2 of 3, '(reference: CollectionReference<unknown, DocumentData>, path?: string | undefined, ...pathSegments: string[]): DocumentReference<unknown, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'CollectionReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'CollectionReference<unknown, DocumentData>'.
+  Overload 3 of 3, '(reference: DocumentReference<unknown, DocumentData>, path: string, ...pathSegments: string[]): DocumentReference<DocumentData, DocumentData>', gave the following error.
+    Argument of type 'Firestore | null' is not assignable to parameter of type 'DocumentReference<unknown, DocumentData>'.
+      Type 'null' is not assignable to type 'DocumentReference<unknown, DocumentData>'.
