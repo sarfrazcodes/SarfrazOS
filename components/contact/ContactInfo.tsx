@@ -14,7 +14,16 @@ export default function ContactInfo() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const cards = [
+  const cards: Array<{
+    id: string;
+    title: string;
+    description: string;
+    icon: React.ReactNode;
+    link?: string;
+    onClick?: () => void;
+    isAction?: boolean;
+    actionIcon?: React.ReactNode;
+  }> = [
     {
       id: "email",
       title: "Email",

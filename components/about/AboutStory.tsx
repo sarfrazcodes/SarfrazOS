@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, Variants } from "framer-motion";
 
 export default function AboutStory() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -21,14 +21,14 @@ export default function AboutStory() {
 
   // Letter by letter animation for the heading
   const headingText = "THE STORY";
-  const headingVariants = {
+  const headingVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: { staggerChildren: 0.08, delayChildren: 0.2 }
     }
   };
-  const letterVariants = {
+  const letterVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { ease: [0.16, 1, 0.3, 1], duration: 0.6 } }
   };

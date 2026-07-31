@@ -17,6 +17,9 @@ export default function TopNav({ onMenuClick }: { onMenuClick?: () => void }) {
   
   const handleLogout = async () => {
     try {
+      if (!auth) {
+        throw new Error("Authentication is not available");
+      }
       await signOut(auth);
       router.push("/admin/login");
     } catch (error) {

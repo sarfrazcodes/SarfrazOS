@@ -19,6 +19,9 @@ export default function AdminLogin() {
     setLoading(true);
 
     try {
+      if (!auth) {
+        throw new Error("Authentication is not available");
+      }
       await signInWithEmailAndPassword(auth, email, password);
       router.push("/admin");
     } catch (err: any) {

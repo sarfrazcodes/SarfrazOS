@@ -74,7 +74,7 @@ const SlugGenerator = forwardRef<HTMLInputElement, SlugGeneratorProps>(
           <input
             id={inputId}
             ref={ref}
-            value={props.value !== undefined ? props.value : internalValue}
+            value={value !== undefined ? value : internalValue}
             onChange={handleManualChange}
             className={cn(
               "w-full pl-8 pr-4 py-2.5 bg-zinc-50 dark:bg-[#050505] border rounded-xl text-sm transition-all outline-none font-mono",
